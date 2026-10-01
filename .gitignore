@@ -28,3 +28,28 @@ dist/
 
 # Logs
 *.log
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Temporary editor and office files
+~$*
+*.tmp
+*.swp
+*.swo
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local notebooks and generated exports
+*.nbconvert.ipynb

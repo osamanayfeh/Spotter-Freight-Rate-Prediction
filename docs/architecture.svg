@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#f7faf9"/>
+  <text x="60" y="62" font-family="Arial" font-size="30" font-weight="700" fill="#064a56">Freight Rate Prediction Architecture</text>
+  <text x="60" y="94" font-family="Arial" font-size="16" fill="#455a60">Training data flows through time-aware features into model comparison and final outputs.</text>
+  <g font-family="Arial" font-size="17" fill="#12343b">
+    <rect x="60" y="155" width="220" height="110" rx="12" fill="#d9eef0" stroke="#064a56" stroke-width="2"/>
+    <text x="170" y="193" text-anchor="middle" font-weight="700">Development data</text><text x="170" y="222" text-anchor="middle">48,000 labeled rows</text><text x="170" y="248" text-anchor="middle">Jan - Oct 2025</text>
+    <rect x="350" y="155" width="220" height="110" rx="12" fill="#e7f2e7" stroke="#39734a" stroke-width="2"/>
+    <text x="460" y="193" text-anchor="middle" font-weight="700">Data quality</text><text x="460" y="222" text-anchor="middle">Missing values</text><text x="460" y="248" text-anchor="middle">Negative-weight flags</text>
+    <rect x="640" y="155" width="220" height="110" rx="12" fill="#fff0d5" stroke="#ad6b00" stroke-width="2"/>
+    <text x="750" y="193" text-anchor="middle" font-weight="700">Feature engineering</text><text x="750" y="222" text-anchor="middle">Date, route, distance</text><text x="750" y="248" text-anchor="middle">Geographic features</text>
+    <rect x="930" y="155" width="210" height="110" rx="12" fill="#f5e3ed" stroke="#8d315d" stroke-width="2"/>
+    <text x="1035" y="193" text-anchor="middle" font-weight="700">Time split</text><text x="1035" y="222" text-anchor="middle">Jan-Aug train</text><text x="1035" y="248" text-anchor="middle">Sep-Oct holdout</text>
+    <rect x="205" y="370" width="220" height="110" rx="12" fill="#e8e3f5" stroke="#5b4a8b" stroke-width="2"/>
+    <text x="315" y="408" text-anchor="middle" font-weight="700">Model comparison</text><text x="315" y="437" text-anchor="middle">Median, Ridge</text><text x="315" y="463" text-anchor="middle">CatBoost</text>
+    <rect x="490" y="370" width="220" height="110" rx="12" fill="#d9eef0" stroke="#064a56" stroke-width="2"/>
+    <text x="600" y="408" text-anchor="middle" font-weight="700">Final CatBoost</text><text x="600" y="437" text-anchor="middle">Retrain Jan-Oct</text><text x="600" y="463" text-anchor="middle">Seed 42</text>
+    <rect x="775" y="370" width="220" height="110" rx="12" fill="#e7f2e7" stroke="#39734a" stroke-width="2"/>
+    <text x="885" y="408" text-anchor="middle" font-weight="700">Submission outputs</text><text x="885" y="437" text-anchor="middle">12,000 predictions</text><text x="885" y="463" text-anchor="middle">31 December rows</text>
+  </g>
+  <g stroke="#064a56" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M280 210 H350"/><path d="M570 210 H640"/><path d="M860 210 H930"/><path d="M1035 265 V320 H315 V370"/><path d="M425 425 H490"/><path d="M710 425 H775"/></g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#064a56"/></marker></defs>
+</svg>
