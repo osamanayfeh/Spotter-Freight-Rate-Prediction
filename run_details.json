@@ -1,0 +1,16 @@
+{
+  "split": {
+    "development_start": "2025-01-01",
+    "development_end": "2025-08-31",
+    "holdout_start": "2025-09-01",
+    "holdout_end": "2025-10-31",
+    "development_rows": 38477,
+    "holdout_rows": 9523
+  },
+  "catboost_model": {
+    "iterations": 700,
+    "depth": 8,
+    "learning_rate": 0.06,
+    "random_seed": 42
+  }
+}
